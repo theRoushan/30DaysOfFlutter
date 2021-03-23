@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tutorial/Screens/home.dart';
 import 'package:tutorial/Screens/loginScreen.dart';
+import 'package:tutorial/Utils/routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,10 +17,10 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
           primaryColor: Colors.blue[300], brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/login",
+      initialRoute: AppRoutes.loginRoute,
       routes: {
-        "/": (context) => HomeScreen(),
-        "/login": (context) => LoginPage(),
+        AppRoutes.homeRoute: (context) => HomeScreen(),
+        AppRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
