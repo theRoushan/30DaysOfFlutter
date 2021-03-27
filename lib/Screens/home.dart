@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial/Widgets/MyDrawer.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Codetantra"),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: Container(
         child: Center(
           child: Text("This is my First App"),
